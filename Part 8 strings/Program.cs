@@ -41,6 +41,30 @@ namespace Part_8_strings
             {
                 Console.WriteLine("Different");
             }
+            Console.WriteLine(name.Replace("d", ""));
+            //(name.Contains("and"));
+            //(name.IndexOf("and") + 1);
+            //(name.Insert(3, "and");
+            //(name.Replace("f", ""));
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.Write("Please input your first name: ");
+            string frstName = Console.ReadLine().ToLower();
+            Console.Write("Please input your last name: ");
+            string lstName = Console.ReadLine().ToLower();
+            Console.Write("Please input your student number: ");
+            string stdntNmbr = Console.ReadLine().ToLower();
+            Console.Write("Your new email address is: ");
+            Console.WriteLine(lstName.Substring(0, 3) + frstName.Substring(0, 3) + stdntNmbr.Substring(6, 3) + "@parkside.ca");
+            Console.WriteLine();
+            frstName.ToUpper();
+            string reverseName = frstName + lstName;
+            Console.WriteLine(reverseName);
+            for (int i = 0; i < reverseName.Length; i++)
+            {
+                
+            }
         }
     }
 }
