@@ -58,12 +58,13 @@ namespace Part_8_strings
             Console.Write("Your new email address is: ");
             Console.WriteLine(lstName.Substring(0, 3) + frstName.Substring(0, 3) + stdntNmbr.Substring(6, 3) + "@parkside.ca");
             Console.WriteLine();
-            frstName.ToUpper();
-            string reverseName = frstName + lstName;
-            Console.WriteLine(reverseName);
-            for (int i = 0; i < reverseName.Length; i++)
+            string backwards;
+            string[] reverseName = new string[0];
+            reverseName[0] = frstName.ToUpper() + lstName;
+            Console.WriteLine(reverseName[0]);
+            for (int i = 0; i < reverseName[0].Length; i++)
             {
-                
+                Console.Write(reverseName[reverseName.Length - i - 1]);
             }
         }
     }
